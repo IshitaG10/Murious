@@ -1,0 +1,52 @@
+.special-thanks-section{
+    flex-direction: column;
+    font-weight: bold;
+    display: flex;
+    width: 98vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+.special-thanks-heading{
+    color: white;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.special-thanks-underline{
+    display: flex;
+    width: 28vw;
+    background: white;
+    height: 0.3vw;
+}
+.special-thanks-clubs{
+    display: flex;
+    width: 98vw;
+    height: 20vh;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.special-thanks-clubs img{
+    width: 7rem;
+    height: 7rem;
+}
+@media only screen and (max-width:1024px) {
+    .special-thanks-section{
+        height: 10vh;
+    }
+}
+@media only screen and (max-width:768px) {
+    .special-thanks-clubs img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .special-thanks-section{
+        height: 10;
+    }
+    .special-thanks-heading{
+        padding-top: 2rem;
+    }
+}

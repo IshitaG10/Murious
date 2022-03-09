@@ -1,0 +1,146 @@
+.background-section-landing{
+    background-image: url("../../BGG.png");
+    background-repeat: no-repeat;
+    background-size: 110vw;
+    top: 0;
+    padding-top: 20rem;
+    left: 0;
+    width: 98.7vw;
+    height: 90vh;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.globe-1{
+    animation: spin 10s linear infinite;
+    transform: 50%, 50%;
+    width: 20vw;
+    position: absolute;
+    margin: 0;
+    left: 4%;
+    top: 7%;;
+    opacity: 1;
+    transform: rotate(49.38deg);
+}
+.globe-2 {
+    z-index: -0.9;
+    width: 20vw;
+    animation: spin 10s linear infinite;
+    position: absolute;
+    margin: 0;
+    right: 4.7%;
+    bottom: -20%;
+    opacity: 2;
+}
+.logo-murious img{
+    height: 10rem;
+    width: 44rem;          
+}
+.logo-murious{
+    /* width: 100vw; */
+    height: 100vh;
+    padding-bottom: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media only screen and (max-width: 1024px) {
+    .background-section-landing{
+        height: 100vh;
+        top: 0;
+        background-size: cover;
+        width: 100vw;
+    }
+    .globe-1{
+        top: 12%;
+    }
+    .logo-murious img{
+        width: 25rem;
+        height: 6rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .background-section-landing{
+        background-position: right;
+        background-size: cover;
+    }
+    .globe-1{
+        top: 18%;
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .background-section-landing{
+        background-size: cover;
+        
+    }
+    .globe-1{
+        width: 40vw;
+        top: 10%;
+    }
+    .globe-2{
+        display: none;
+    }
+    .logo-murious img{
+        width: 15rem;
+        height: 3.5rem;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    .logo-murious img{
+        height: 5rem;
+        width: 22rem;
+    }
+    .logo-murious{
+        padding-bottom: 22rem;
+    }
+    .globe-1{
+        width: 12rem;
+    }
+    .globe-2{
+        width: 12rem;
+        right: 12.7%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .logo-murious img {
+        height: 7rem;
+        width: 27rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .logo-murious {
+        height: 79vh;
+    }
+    .logo-murious img {
+        height: 3rem;
+        width: 15rem;
+    }
+    .bg{
+        background-image: url("../../BGG.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 98.7vw;
+        height: 80vh;
+        background-position:right;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .globe-2 {
+        bottom: 12%;
+    }
+}
+@keyframes spin {
+    0% {
+      transform: rotateZ(0);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+} */

@@ -1,0 +1,113 @@
+.heading{
+    text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  color: rgb(231, 230, 235);
+  padding-top: 2%;
+   padding-bottom: 2%; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+}
+.underline{
+  display: flex;
+  background: rgb(173, 131, 241);
+  height: 8px;
+  width: 185px;
+}
+
+
+@media screen and (max-width: 768px){
+    
+.heading{
+    font-size: 1.2rem;
+}
+
+.underline{
+    height: 2px;
+  width: 60px;
+}
+
+}
+
+
+
+
+
+  /* @media screen and (max-width: 450px) {
+    .heading {
+      font-size: 1.5rem; 
+    }
+
+    .info{
+        font-size: 1rem;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .underline{
+        width: 33rem;
+        height: .9vh;
+    }
+    .heading{
+        font-size: 4rem;
+    }
+    .info{
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .underline{
+        width: 24.5rem;
+        height: .7vh;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+
+    .info{
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .underline{
+        width: 24.5rem;
+        height: .6vh;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+
+    .info{
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 420px) and (max-width: 600px) {
+    .underline{
+        width: 20.5rem;
+        height: .6vh;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    .info{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .underline{
+        width: 16.5rem;
+        height: .4vh;
+    }
+    .heading{
+        padding-top: 5%;
+        padding-bottom: 2%;
+        font-size: 2rem;
+    }
+    .info{
+    
+        font-size: 1rem;
+    }
+} */

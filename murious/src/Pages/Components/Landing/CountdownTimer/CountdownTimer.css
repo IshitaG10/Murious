@@ -1,0 +1,120 @@
+@import url('http://fonts.cdnfonts.com/css/nexa-bold');
+                
+.countdown-timer {
+    width: 52rem;
+    height: auto;
+    margin: auto;
+    /* border: 5px solid #b9a8cd; */
+    color: #edf0f1;
+    background-color: #11051d;
+    font-family: 'Nexa', sans-serif; 
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(17, 5, 29, 0.14);
+    /* border: 2px solid #FFFFFF; */
+    box-sizing: border-box;
+    /* filter: blur(4px); */
+    backdrop-filter: blur(7px);
+}
+
+
+/* .countdown-timer span {
+    margin-left: 5px;
+    margin-right: 5px;
+} */
+.two-numbers:nth-child(1){
+    padding-left: 2rem;
+}
+.two-numbers {
+    width: 2ch;
+    font-size: 3.5rem;
+
+    /* background-color: #11051d; */
+    /* border-radius: 50%; */
+    margin: 2rem 0rem;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid #b9a8cd; */
+    color: #edf0f1;
+    
+}
+.Time-Parameters{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5vw;
+    font-size: 1rem;
+}
+.Time-Parameters_sec{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-right: 2rem;
+}
+@media only screen and (max-width:1024px){
+    .countdown-timer{
+        width: 38rem;
+    }
+    .two-numbers{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .Time-Parameters{
+        font-size: 1rem;
+    }
+    .Time-Parameters_sec{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:768px){
+    .countdown-timer{
+        width: 24rem;
+        height: 5rem;
+        margin-bottom: 10rem;
+    }
+    .two-numbers{
+        font-size: 1rem;
+    }
+    .Time-Parameters{
+        font-size: 0.7rem;
+    }
+    .Time-Parameters_sec{
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width:425px){
+    .countdown-timer{
+        width: 18rem;
+        margin-bottom: 15rem;
+    }
+    .two-numbers{
+        font-style: 0.7rem;
+    }
+    .Time-Parameters{
+        font-size: 0.5rem;
+    }
+    .Time-Parameters_sec{
+        font-size: 0.5rem;
+    }
+}
+/* @media only screen and (max-width:600px){
+    .countdown-timer {
+        width: 20rem;
+        height: 5rem;
+    }
+    .two-numbers {
+        font-size: 1rem;
+    }
+    .Time-Parameters{
+        font-size: .5rem;
+    }
+    .Time-Parameters_sec{
+        font-size: .5rem;
+    }
+} */

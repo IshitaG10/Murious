@@ -1,0 +1,30 @@
+
+.pointer{
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: fixed;
+}
+.pointer::before{
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background-color: aqua;
+    position: absolute;
+    content: "";
+    transform: translateX(-30%) translateY(-30%);
+    opacity: .5;
+    animation: animate 1s linear infinite;
+    box-shadow: 0 0 30px 10px rgb(229, 13, 248);
+}
+@keyframes animate {
+    0%{
+        filter:rgb(229, 13, 248) ;
+    }
+    100%{
+        filter: rgb(229, 13, 248);
+    }
+
+} 

@@ -1,0 +1,100 @@
+.Contact-form{
+  height: 100vh;
+  padding-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contact-us-heading{
+  padding-bottom: 2rem;
+}
+.forms-murious{
+  background-position: center;
+  display: flex;
+  height: 100vh;
+  padding-bottom: 6rem;
+  flex-direction: column;
+  border-radius: 20px;
+  justify-content: space-evenly;
+}
+.contact-us-underline{
+  display: flex;
+  width: 23rem;
+  height: 0.4rem;
+  background: rgb(173, 131, 241);
+}
+.title{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  color: whitesmoke;
+}
+  form > div{
+    position:absolute;
+    top:0;
+    left:50%;
+    padding:0 20px;
+    transform:translate(-50%,-50%);
+    background-color:rgba(53, 38, 88, 0.582);
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-align:center;
+  }
+  form > input,
+  form > textarea {
+    padding: 12px;
+    margin: 12px auto;
+    border: 1px solid rgb(215, 187, 247);
+    color: #ddd;
+    background-color: rgba(41, 14, 90, 0.493);
+    border-radius: 4px;
+    display: block;
+    width: 70vw;
+  }
+  form > textarea{
+    height:100px;
+    resize:vertical;
+  }
+  form > input[type="submit"] {
+    max-width: 20vw;
+    padding-left: 1%;
+    padding-right: 1%;
+    cursor: pointer;
+    transition: 0.35s;
+  }
+  form > input[type="submit"]:hover {
+    background-color: #555;
+  }
+  @media  screen and (max-width: 768px) {
+    .title{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .contact-us-underline{
+      width: 11.4rem;
+      height: 0.3rem;
+    }
+  }
+  @media  screen and (max-width: 425px) {
+    .title{
+        font-size: 1.5rem;
+    }
+    .contact-us-underline{
+      width: 8.8rem;
+      height: 0.2rem;
+    }
+    .Contact-form{
+      padding-top: 20rem;
+      padding-bottom: 15rem;
+      height: 69vh;
+    }
+    .contact-us-heading{
+      padding-bottom: 1rem;
+    }
+    .forms-murious{
+      display: flex;
+    }
+  }
