@@ -3,29 +3,30 @@
     font-weight: bold;
     display: flex;
     width: 98vw;
-    height: 50vh;
+    height: 74vh;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
 }
 .special-thanks-heading{
     color: white;
-    font-size: 3vw;
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .special-thanks-underline{
     display: flex;
-    width: 28vw;
-    background: white;
-    height: 0.3vw;
+    width: 36.9rem;
+    background: rgb(173 131 241);
+    height: 0.4rem;
 }
 .special-thanks-clubs{
     display: flex;
     width: 98vw;
     height: 20vh;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -35,18 +36,51 @@
 }
 @media only screen and (max-width:1024px) {
     .special-thanks-section{
-        height: 10vh;
+        margin-top: 2rem;
+        width: 100vw;
+        height: 60vh;
+    }
+    .special-thanks-heading{
+        font-size: 3rem;
+
+    }
+    .special-thanks-underline{
+        width: 28rem;
+        height: 0.3rem;
     }
 }
 @media only screen and (max-width:768px) {
     .special-thanks-clubs img{
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
     }
     .special-thanks-section{
-        height: 10;
+        /* height: 65vh; */
+        margin: 0;
     }
     .special-thanks-heading{
-        padding-top: 2rem;
+        padding-top: 0rem;
+        font-size: 2.5rem;
+    }
+    .special-thanks-underline{
+        width: 23.7rem;
+    }
+}
+@media only screen and (max-width:425px) {
+    .special-thanks-clubs img{
+        width: 7rem;
+        height: 7rem;
+    }
+    .special-thanks-section{
+        height: 100%;
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+    .special-thanks-heading{
+        font-size: 1.5rem;
+    }
+    .special-thanks-underline{
+        width: 14rem;
+        height: 0.2rem;
     }
 }

@@ -38,15 +38,7 @@ function Navbar() {
             </div>
             <div className='header-links'>
               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                <li className='nav-item'>
-                  <Link 
-                    onClick={() => scroll.scrollToTop()} 
-                    className='nav-links' 
-                    activeClassName='active' 
-                    to='/'>
-                      Home
-                  </Link>
-                </li>
+        
                 <li className='nav-item'>
                   <LNK 
                     to='about-murious' 
@@ -115,7 +107,7 @@ function Navbar() {
                 <li className='nav-item contact'>
                   <LNK 
                     to='contact-form-murious' 
-                    className='contact-button' 
+                    className='nav-links' 
                     activeClassName='active' 
                     onClick={handleClick}
                     spy={true}
@@ -123,6 +115,19 @@ function Navbar() {
                     offset={0}
                     duration={1000}>
                       Contact
+                  </LNK>
+                </li>
+                <li className='nav-item contact'>
+                  <LNK 
+                    to='/' 
+                    className='contact-button' 
+                    activeClassName='active' 
+                    onClick={handleClick}
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1000}>
+                      Registration
                   </LNK>
                 </li>
               </ul>

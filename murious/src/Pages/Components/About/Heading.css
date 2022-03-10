@@ -1,12 +1,11 @@
-
 @import url('http://fonts.cdnfonts.com/css/nexa-bold');                
 .ab-heading{
+    width: 98vw;
     font-family: 'Nexa', sans-serif;
     text-align: center;
     font-weight: bold;
     font-size: 4rem;
     color: rgb(231, 230, 235);
-    padding-top: 2%;
     padding-bottom: 2%; 
     display: flex;
     justify-content: center;
@@ -15,25 +14,26 @@
 }
 .about-heading-underline{
     display: flex;
-    width: 32rem;
+    width: 31rem;
     height: 0.4rem;
     background-color: rgb(173, 131, 241);
 }
 @media screen and (max-width: 1024px){
     .ab-heading-size {
         text-align: center;
-        font-size: 3.5rem; 
+        font-size: 3rem; 
     }
     .about-heading-underline{
-        width: 27.6rem;
+        width: 23.7rem;
+        height: 0.3rem;
     }
 }
 @media only screen and (max-width: 768px){
     .ab-heading-size{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .about-heading-underline{
-        width: 24rem;
+        width: 20rem;
         height: 0.3rem;
     }
 }

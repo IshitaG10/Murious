@@ -1,61 +1,37 @@
-@import url('http://fonts.cdnfonts.com/css/nexa-bold');
-                
+@import url('http://fonts.cdnfonts.com/css/nexa-bold'); 
 .countdown-timer {
-    width: 52rem;
-    height: auto;
-    margin: auto;
-    /* border: 5px solid #b9a8cd; */
-    color: #edf0f1;
-    background-color: #11051d;
-    font-family: 'Nexa', sans-serif; 
-    font-size: 30px;
-
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-
-    background: rgb(17, 5, 29, 0.14);
-    /* border: 2px solid #FFFFFF; */
+    width: 44rem;
+    height: 7rem;
     box-sizing: border-box;
-    /* filter: blur(4px); */
-    backdrop-filter: blur(7px);
-}
-
-
-/* .countdown-timer span {
-    margin-left: 5px;
-    margin-right: 5px;
-} */
-.two-numbers:nth-child(1){
-    padding-left: 2rem;
+    margin: auto;
+    background: rgba(237, 244, 245, 0.2);
+    backdrop-filter: blur(5px);
+    color: #edf0f1;
+    font-family: 'Nexa', sans-serif; 
 }
 .two-numbers {
-    width: 2ch;
     font-size: 3.5rem;
-
-    /* background-color: #11051d; */
-    /* border-radius: 50%; */
-    margin: 2rem 0rem;
-    height: 5rem;
+    margin-left: 2rem;
+    height: 4rem;
     width: 5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 3px solid #b9a8cd; */
     color: #edf0f1;
-    
+    justify-content: center;
+    align-items: flex-start;
+}
+.countdown-dhm{
+    display: flex;
+    align-items: center;
 }
 .Time-Parameters{
+    height: 5rem;
+    margin-right: 3rem;
+    display: flex;
     font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 5vw;
-    font-size: 1rem;
-}
-.Time-Parameters_sec{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1rem;
-    padding-right: 2rem;
+    align-items: center;
 }
 @media only screen and (max-width:1024px){
     .countdown-timer{
@@ -64,6 +40,7 @@
     .two-numbers{
         font-size: 2rem;
         font-weight: bold;
+        height: 2.5rem;
     }
     .Time-Parameters{
         font-size: 1rem;
@@ -73,13 +50,20 @@
     }
 }
 @media only screen and (max-width:768px){
-    .countdown-timer{
-        width: 24rem;
+    .countdown-timer {
+        width: 24.65rem;
         height: 5rem;
         margin-bottom: 10rem;
     }
-    .two-numbers{
-        font-size: 1rem;
+    .two-numbers {
+        font-size: 2rem;
+        margin-left: 0;
+        height: 5rem;
+        width: 3.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       font-size: 1rem;
     }
     .Time-Parameters{
         font-size: 0.7rem;
@@ -91,7 +75,14 @@
 @media only screen and (max-width:425px){
     .countdown-timer{
         width: 18rem;
+        height: 4rem;
         margin-bottom: 15rem;
+    }
+    .countdown-dhm {
+        display: flex;
+        height: 4rem;
+        width: 6.7rem;
+        align-items: center;
     }
     .two-numbers{
         font-style: 0.7rem;
@@ -103,18 +94,3 @@
         font-size: 0.5rem;
     }
 }
-/* @media only screen and (max-width:600px){
-    .countdown-timer {
-        width: 20rem;
-        height: 5rem;
-    }
-    .two-numbers {
-        font-size: 1rem;
-    }
-    .Time-Parameters{
-        font-size: .5rem;
-    }
-    .Time-Parameters_sec{
-        font-size: .5rem;
-    }
-} */

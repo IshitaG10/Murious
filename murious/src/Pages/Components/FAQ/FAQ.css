@@ -1,5 +1,5 @@
  .faq {
-   padding-top: 7rem;
+   padding-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,8 +13,8 @@
  .ques-heading-titlebox{
   display: flex;
   background-color: rgba(80, 80, 80, 0.5);
-  width: 50rem;
-  height: 5rem;
+  width: 33rem;
+  height: 4rem;
   border-radius: 20px;
   justify-content: space-between;
   color: white;
@@ -29,20 +29,20 @@
 .ques-wrapper-1-active .list,
 .ques-wrapper-2-active .list {
   display: flex;
+  padding: 0 1rem;
   flex-direction: column;
-  margin-bottom: 3rem;
-  align-items: center;
+  align-items: flex-start;
   color: white;
   background-color: rgba(80, 80, 80, 0.5);
   border-radius: 20px;
   font-size: 1.2rem;
-  width: 50rem;
+  width: 33rem;
 }
  
 .ques-wrapper-1-active .list-item,
 .ques-wrapper-2-active .list-item {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
 }
  
@@ -50,7 +50,7 @@
  
 .ques-wrapper-1-active .ques-heading-titlebox ,
 .ques-wrapper-2-active .ques-heading-titlebox {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 
 }
  
@@ -70,11 +70,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 .ques-heading-m{
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .more-options-m{
   padding: 1rem;
@@ -82,77 +82,24 @@
 
 
 /* media query */  
-@media screen and (max-width: 1024px){
-  .ques-wrapper-1 .ques-heading-titlebox,
-  .ques-wrapper-2 .ques-heading-titlebox{
-    width: 44rem;
+@media screen and (max-width: 768px){
+  .ques-heading-titlebox {
+    width: 23rem;
+    height: 3rem;
   }
-  .ques-wrapper-1-active .list,
-  .ques-wrapper-2-active .list {
-    width: 44rem;
-  } 
-  .ques-wrapper-1-active .list-item,
-  .ques-wrapper-2-active .list-item {
-    width: 44rem;
-  }
-  .ques-wrapper-1-active .ques-heading-titlebox ,
-  .ques-wrapper-2-active .ques-heading-titlebox {
-    width: 44rem;
-  }
-  .ques-wrapper-1-active .more-option-show,
-  .ques-wrapper-2-active .more-option-show {
-    transform: rotate(180deg);
-    cursor: pointer;
-    font-weight: bold;
-  }
-  .ques-wrapper-1 .more-option-show,
-  .ques-wrapper-2 .more-option-show{
-    cursor: pointer;
-    font-weight: bold;
+  .ques-wrapper-1-active .list, .ques-wrapper-2-active .list {
+    width: 23rem;
+    height: 5rem;
   }
 }
 @media screen and (max-width: 768px){
-  .ques-wrapper-1 .ques-heading-titlebox,
-  .ques-wrapper-2 .ques-heading-titlebox{
-    width: 90vw
-  }
-  .ques-wrapper-1-active .list,
-  .ques-wrapper-2-active .list {
-    width: 90vw;
-  } 
-  .ques-heading-m{
-    font-size: 1.7rem;
-  }
-  .ques-heading-titlebox{
-    height: 3.5rem;
-  }
-  .more-options-m{
-    padding: 0;
-    height: 3.5rem;
+  .ques-heading-titlebox {
+    width: 18rem;
+    height: 2.5rem;
   }
   .ques-wrapper-1-active .list, .ques-wrapper-2-active .list {
-    width: 90vw;
-  }
-}
-@media screen and (max-width: 500px){
-  .ques-heading-m{
-    font-size: 1rem;
-  }
-  .ques-heading-titlebox{
-    height: 3.5rem;
-  }
-  .more-options-m{
-    padding: 0;
-    height: 3.5rem;
-  }
-  .ques-wrapper-1-active .list-item,
-  .ques-wrapper-2-active .list-item{
-    width: 90vw;
-    /* height: 10rem; */
-    justify-content: center;
-    display: flex;
-  }
-  .ques-wrapper-1-active .list, .ques-wrapper-2-active .list {
-    width: 90vw;
+    width: 18rem;
+    height: 5rem;
+    font-size: 0.85rem;
   }
 }

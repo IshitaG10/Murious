@@ -2,9 +2,9 @@ import React from 'react'
 import './Footer.css'
 import logo from './Logo-murious.svg'
 import TMP_Logo from './TMP_Logo.svg'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons"
-
+import {BsFillTelephoneFill, BsInstagram} from "react-icons/bs"
+import {FaGoogle} from "react-icons/fa"
+import {Link} from 'react-router-dom';
 function Footer() {
   return (
     <>
@@ -25,9 +25,9 @@ function Footer() {
                     </div>
 
                     <div className='Footer-Socials'>    
-                    <a href='#' className='Sociallinks'><FontAwesomeIcon icon={faFacebook} /></a>
-                    <a href='#' className='Sociallinks'><FontAwesomeIcon icon={faTwitter} /></a>
-                    <a href='#' className='Sociallinks'><FontAwesomeIcon icon={faInstagram} /></a>
+                    <Link to='//instagram.com/jyc.technical.club?utm_medium=copy_link' className='Sociallinks'><BsInstagram/></Link>
+                    <a href='tel:' className='Sociallinks'><BsFillTelephoneFill/></a>
+                    <a href='mailto:' className='Sociallinks'><FaGoogle/></a>
             </div>  
         </div>
       </div>
@@ -40,7 +40,7 @@ function Footer() {
           <div className='Footer-Logo_TMP'>
               <img className='TMP_logo' alt='TMP' src={TMP_Logo}/>
 
-              <p className='TMP-Text'>Managed by Technical Sciences, Movies and Photography club.</p>
+              <p className='TMP-Text'></p>
           </div>
         </div>
 

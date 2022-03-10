@@ -5,15 +5,17 @@ export default function Contact() {
   return (
     <div className='Contact-form' id='contact-form-murious'>
       <div className='contact-us-heading'>
-        <div className='title'>Contact Us</div>
-        <div className='contact-us-underline'/>
+        <div className='title-contact-form'>
+          Contact Us
+          <div className='contact-us-underline'/>
+        </div>
       </div>
       <form className='forms-murious'>
         <input type="text" placeholder="Name (required)" required/>
         <input type="text" placeholder="Email address (required)" required/>
         <input type="text" placeholder="Subject (required)" required/>
         <textarea placeholder="Message (required)" required></textarea>
-        <input type="submit" value="Send"/>
+        <input className='subhmit-button' type="submit" value="Send"/>
       </form>
     {/*<div>
   <div className='contact-form-wrapper d-flex justify-content-center'>

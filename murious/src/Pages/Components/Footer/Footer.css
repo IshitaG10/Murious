@@ -14,10 +14,13 @@
     display: flex;
     text-align: left;
 }
+.Contact-Us{
+    margin-left: 1rem;
+}
 .Footer-Line_l1{
-    width: 5vw;
+    width: 11.5rem;
     height: 0.5vh;
-    margin-left: 0.7vw;
+    margin-left: 1rem;
     z-index: 2;
     background-color: #B9A8CD;
 }
@@ -28,7 +31,9 @@
     align-items: flex-start;
 }
 .Footer-Socials{
-    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem;
 }
 .Sociallinks{
     text-decoration: none;
@@ -115,5 +120,14 @@
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .Murious-Logo{
+        margin: 1rem 0;
+    }
+    .Footer-Logo_TMP{
+        height: 100%;
     }
 }

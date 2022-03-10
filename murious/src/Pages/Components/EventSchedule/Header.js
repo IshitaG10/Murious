@@ -6,7 +6,7 @@ import './Header.css'
 function Header() {
   return (
     <div>
-      <div className='heading'>
+      <div className='heading-eventschedule'>
         Event Schedule
         <div div className='underline-event-schedule'></div>
       </div>

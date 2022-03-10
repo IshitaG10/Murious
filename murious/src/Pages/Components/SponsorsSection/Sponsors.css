@@ -1,217 +1,119 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-
-.TitleSponsors{
-  font-size: 3rem;
-}
-.container-teams{
-  padding-top: 5rem;
-}
-@media only screen and (max-width:600px) {
-  .container-teams{
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-  }
-}
-@media only screen and (max-width:425px) {
-  .container-teams{
-    padding-top: 2rem;
-  }
-}
-.SlideshowTeam {
-  margin-top: 15%;
-  width: 140% ;
-  margin-left: -20%;
-}
-.slide img {
-  width: 15rem;
-  margin: 0 auto;
-  border-radius: 10px;
-  height: 18rem;
-}
-
-.slide {
-  transform: scale(0.8);
-  transition: transform 300ms;
-  opacity: 0.8;
-  background-color: transparent;  
-}
-
-.activeSlide {
-  transform: scale(1);
-  opacity: 1;
-  background-color: transparent;
+.sponsors-section{
+  height: 50vh;
   display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.arrow {
-  background: linear-gradient(222.3deg, rgba(87, 8, 47, 0.3) 20.41%, rgba(38, 38, 38, 0.214063) 40.32%, rgba(27, 8, 65, 0.3) 61.37%, rgba(113, 101, 136, 0) 83.41%, rgba(33, 5, 54, 0.3) 84.95%);
-  position: absolute;
-  margin-top: -5%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  z-index: 10;
+  justify-content: space-between;
+}
+.sponsors-heading{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 4rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+.sponsors-heading-underline{
+  display: flex;
+  height: 0.4rem;
+  width: 38.2rem;
+  background: rgb(173 131 241);
+}
+.sponsor-logos{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: rgba(237, 244, 245, 0.25);
+  backdrop-filter: blur(5px);
+}
+.sponsor-logos img:nth-child(1){
   width: 10%;
-  height: 25%;
-  color: white;
-  font-size: 1.5rem;
 }
-
-.arrow svg {
-  transition: color 300ms;
+.sponsor-logos img:nth-child(2){
+  width: 10%;
 }
-
-.arrow svg:hover {
-  color:#644D92;
+.sponsor-logos img:nth-child(3){
+  width: 20%;
+  height: 30%;
 }
-
-.next {
-  right: 0%;
-  top: 50%;
+.sponsor-logos img:nth-child(4){
+  width: 10%;
 }
-
-.prev {
-  left: 0%;
-  top: 50%;
+.sponsor-logos img:nth-child(5){
+  width: 10%;
 }
-.innercontainerTeam{
-  width: 79%;  
-  background-color: #11051D  ;
-  margin-left:10.5%;
-  margin-top: -45%;
-  border-bottom: 2px solid #644D92;
-  margin-bottom: 5% ;
-}
-.TitleSponsors{
-    font-weight: bold;
-    font-size: 4rem;
-  text-decoration: underline 5px #7A3C86;
-}
-.App {
-  text-align: center;
-  /* background-color:#11051D; */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none; 
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width:1024px){
+  .sponsors-heading{
+    font-size: 3rem;
+  }
+  .sponsors-heading-underline{
+    width: 28.5rem;
+    height: 0.3rem;
+  }
+  .sponsors-section{
+    height: 44vh;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  
-}
-
-.App-link {
-  color: #61dafb;
-}
-.TitleJYC{
-  padding-top: 2%;
-  display: flex;
-  flex-direction: column;
-}
-.sponsors-inner{
-  display: flex;
-  padding-top: 2%;
-  flex-direction:column;
-  width: 60%;
-  margin-left: 20%;
-  height: 77vh;
-  margin-top: 2%;
-  font-size: 2.7rem ;
-  border-radius: 50%;
-  color: white;
-  background: linear-gradient(222.3deg, rgba(87, 8, 47, 0.3) 20.41%, rgba(38, 38, 38, 0.214063) 40.32%, rgba(27, 8, 65, 0.3) 61.37%, rgba(113, 101, 136, 0) 83.41%, rgba(33, 5, 54, 0.3) 84.95%);
-}
-
-@media screen and (max-width:500px) {
-  .sponsors-inner{
-    font-size: 2rem;
-    height: 50vh;
-    width: 90%;
-    margin-left: 5%;
-  }
-  .TitleSponsors{
+@media only screen and (max-width:768px){
+  .sponsors-heading{
     font-size: 2.5rem;
   }
-  .SlideshowTeam{
-    margin:0%;
-    width: 100%;
+  .sponsors-heading-underline{
+    width: 24.3rem;
   }
-  .slide{
-    padding-top: 15%;
-    transform: scale(.7);
+  .sponsors-section{
+    height: 100%;
   }
-  .slick-track{
-    height: 320px;
-    padding-top: 5%;
-    margin-top: -25%;
+  .sponsor-logos{
+    margin-top: 2rem;
+    gap: 2.5rem;
   }
-  .SlideshowTeam{
-    font-size: 0.8rem;
-    margin-top: 6%;
+  .sponsor-logos img:nth-child(1){
+    width: 15%;
   }
-}
-@media screen and (max-width:700px) and (min-width:501px) {
-  .sponsors-inner{
-    font-size: 1.6rem;
-    height: 66vh;
+  .sponsor-logos img:nth-child(2){
+    width: 10%;
   }
-  .slide{
-    margin-left: -25%;
-    transform: scale(0.5);
+  .sponsor-logos img:nth-child(3){
+    width: 25%;
+    height: 40%;
   }
-  .activeSlide{
-    transform: scale(0.6);
+  .sponsor-logos img:nth-child(4){
+    width: 20%;
   }
-  .slick-track{
-    height: 300px;
-    margin-top: 0%;
-  }
-  .SlideshowTeam{
-    font-size: 1.2rem;
-    margin-top: 6%;
+  .sponsor-logos img:nth-child(5){
+    width: 20%;
   }
 }
-@media screen and (max-width:900px) and (min-width:701px) {
-  .sponsors-inner{
-    font-size: 2rem;
-    height: 76vh;
-  }
-  .slide{
-    margin-left: -15%;
-    transform: scale(0.6);
-  }
-  .activeSlide{
-    transform: scale(0.7);
-  }
-  .slick-track{
-    height: 300px;
-    margin-top: 0%;
-   
-  }
-  .SlideshowTeam{
+@media only screen and (max-width:425px){
+  .sponsors-heading{
     font-size: 1.5rem;
-    margin-top: 6%;
   }
-  .TitleSponsors{
-    font-size: 3rem;
+  .sponsors-heading-underline{
+    width: 14.5rem;
+    height: 0.2rem;
+  }
+  .sponsor-logos{
+    margin-top: 2rem;
+    gap: 2.5rem;
+  }
+  .sponsor-logos img:nth-child(1){
+    width: 25%;
+  }
+  .sponsor-logos img:nth-child(2){
+    width: 10%;
+  }
+  .sponsor-logos img:nth-child(3){
+    width: 45%;
+    height: 80%;
+  }
+  .sponsor-logos img:nth-child(4){
+    width: 40%;
+  }
+  .sponsor-logos img:nth-child(5){
+    width: 30%;
   }
 }

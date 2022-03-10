@@ -66,29 +66,25 @@ function Team() {
   return (
     <>
       <div className='container-teams' id="team-murious">
-        <div className='innercontainer'>
-          <div className='TitleJYC'>
-            <div className='TitleTeamsinner'>
-              <div className="TTT">
-              <div className='TitleTeam1'><b>Team</b></div>
-              <div className='TitleTechClub'>Technical Club</div>
-            </div>
-            
-         
-          <div className="SlideshowTeam">
-            <Slider {...settings}>
-              {images.map((img, idx) => (
-                <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-                  <img src={img} alt={img} />
-                </div>
-              ))}
-            </Slider>
+        <div className="TTT">
+          <div className='TitleTeam1'>
+            <b>Team</b>
           </div>
-          </div>
+          <div className='TitleTechClub'>
+            Technical, Movies and Photography
+            <div className="teams-heading-underline"/>
           </div>
         </div>
+        <div className="SlideshowTeam">
+          <Slider {...settings}>
+            {images.map((img, idx) => (
+              <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
+                <img src={img} alt={img} />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
-    
     </>
   );
 }
