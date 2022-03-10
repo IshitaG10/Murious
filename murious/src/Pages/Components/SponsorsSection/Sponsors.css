@@ -1,0 +1,119 @@
+.sponsors-section{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sponsors-heading{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 4rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+.sponsors-heading-underline{
+  display: flex;
+  height: 0.4rem;
+  width: 38.2rem;
+  background: rgb(173 131 241);
+}
+.sponsor-logos{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: rgba(237, 244, 245, 0.25);
+  backdrop-filter: blur(5px);
+}
+.sponsor-logos img:nth-child(1){
+  width: 10%;
+}
+.sponsor-logos img:nth-child(2){
+  width: 10%;
+}
+.sponsor-logos img:nth-child(3){
+  width: 20%;
+  height: 30%;
+}
+.sponsor-logos img:nth-child(4){
+  width: 10%;
+}
+.sponsor-logos img:nth-child(5){
+  width: 10%;
+}
+@media only screen and (max-width:1024px){
+  .sponsors-heading{
+    font-size: 3rem;
+  }
+  .sponsors-heading-underline{
+    width: 28.5rem;
+    height: 0.3rem;
+  }
+  .sponsors-section{
+    height: 44vh;
+  }
+}
+@media only screen and (max-width:768px){
+  .sponsors-heading{
+    font-size: 2.5rem;
+  }
+  .sponsors-heading-underline{
+    width: 24.3rem;
+  }
+  .sponsors-section{
+    height: 100%;
+  }
+  .sponsor-logos{
+    margin-top: 2rem;
+    gap: 2.5rem;
+  }
+  .sponsor-logos img:nth-child(1){
+    width: 15%;
+  }
+  .sponsor-logos img:nth-child(2){
+    width: 10%;
+  }
+  .sponsor-logos img:nth-child(3){
+    width: 25%;
+    height: 40%;
+  }
+  .sponsor-logos img:nth-child(4){
+    width: 20%;
+  }
+  .sponsor-logos img:nth-child(5){
+    width: 20%;
+  }
+}
+@media only screen and (max-width:425px){
+  .sponsors-heading{
+    font-size: 1.5rem;
+  }
+  .sponsors-heading-underline{
+    width: 14.5rem;
+    height: 0.2rem;
+  }
+  .sponsor-logos{
+    margin-top: 2rem;
+    gap: 2.5rem;
+  }
+  .sponsor-logos img:nth-child(1){
+    width: 25%;
+  }
+  .sponsor-logos img:nth-child(2){
+    width: 10%;
+  }
+  .sponsor-logos img:nth-child(3){
+    width: 45%;
+    height: 80%;
+  }
+  .sponsor-logos img:nth-child(4){
+    width: 40%;
+  }
+  .sponsor-logos img:nth-child(5){
+    width: 30%;
+  }
+}

@@ -1,0 +1,123 @@
+.Contact-form{
+  height: 100vh;
+  padding-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contact-us-heading{
+  padding-bottom: 2rem;
+}
+.forms-murious{
+  background-position: center;
+  display: flex;
+  height: 100vh;
+  padding-bottom: 6rem;
+  flex-direction: column;
+  border-radius: 20px;
+  justify-content: space-evenly;
+}
+.contact-us-underline{
+  display: flex;
+  width: 23.2rem;
+  height: 0.4rem;
+  background: rgb(173, 131, 241);
+}
+.title-contact-form{
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  align-items: center;
+  color: whitesmoke;
+}
+  form > div{
+    position:absolute;
+    top:0;
+    left:50%;
+    padding:0 20px;
+    transform:translate(-50%,-50%);
+    background-color:rgba(53, 38, 88, 0.582);
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-align:center;
+  }
+  form > input,
+  form > textarea {
+    padding: 12px;
+    margin: 12px auto;
+    border: 1px solid rgb(215, 187, 247);
+    color: #ddd;
+    background-color: rgba(41, 14, 90, 0.493);
+    border-radius: 4px;
+    display: block;
+    width: 33rem;
+  }
+  form > textarea{
+    height:100px;
+    resize:vertical;
+    font-family: "Montserrat";
+  }
+  form > input[type="submit"] {
+    font-weight: bold;
+    font-size: 1rem;
+    max-width: 10rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    cursor: pointer;
+    transition: 0.35s;
+    border-radius: 30px;
+    background-color: rgb(173 131 241);
+    color: black;
+  }
+  form > input[type="submit"]:hover {
+    background-color: #685d9e;
+    color: white;
+  }
+@media  screen and (max-width: 1024px) {
+  .title-contact-form{
+    font-size: 3rem;
+  }
+  .contact-us-underline{
+    width: 17.3rem;
+    height: 0.3rem;
+  }
+}
+@media  screen and (max-width: 768px) {
+  .title-contact-form{
+    font-size: 2.5rem;
+  }
+  .contact-us-underline{
+    width: 14.5rem;
+    height: 0.3rem;
+  }
+  form > input, form > textarea {
+    width: 23rem;
+  }
+}
+@media  screen and (max-width: 425px) {
+  .title-contact-form{
+    font-size: 1.5rem;
+  }
+  form > input, form > textarea {
+    width: 18rem;
+    color: wheat;
+  }
+  .contact-us-underline{
+    width: 8.8rem;
+    height: 0.2rem;
+  }
+  .Contact-form{
+    padding-top: 20rem;
+    padding-bottom: 15rem;
+    height: 69vh;
+  }
+  .contact-us-heading{
+    padding-bottom: 1rem;
+  }
+  .forms-murious{
+    display: flex;
+  }
+}

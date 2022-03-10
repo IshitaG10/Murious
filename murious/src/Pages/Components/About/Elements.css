@@ -1,0 +1,55 @@
+/* .pic1 img{
+  position: absolute;
+  margin: 0;
+  left: 16%;
+  top: 114%;
+  opacity: 0.6;
+  width: 15rem;  
+}
+.pic2 img{
+  position: absolute;
+  margin: 0;
+  top: 171%;
+  right: 19%;
+  bottom: 0%;
+  opacity: 0.6;
+  width: 17rem;
+} */ 
+@media only screen and (max-width: 1130px) {
+  .pic1 img{
+    left: 8%;
+  }
+  .pic2 img {
+    right: 1%;
+    top: 179%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pic1 img{
+    top: 190%;
+    width: 12rem;
+  }
+  .pic2 img{
+    top: 200%;
+    width: 12rem;
+  }  
+}
+@media only screen and (max-width: 730px) {    
+  .pic1 img{
+    left: 5%;
+    top: 190%;
+  }
+  .pic2 img{
+    left: 25%;
+    top: 200%;
+    width: 18rem;
+  }  
+  .cube:nth-child(4) {
+    left: 65vw;
+  }
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 57vw;
+    top: 165vh;
+  }
+}

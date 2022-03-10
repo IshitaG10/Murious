@@ -1,0 +1,44 @@
+.heading-faq{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    color: rgb(231, 230, 235);
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem; 
+}
+.underline-faq{
+    display: flex;
+    background: rgb(173, 131, 241);
+    height: 0.4rem;
+    width: 11.8rem;
+}
+@media screen and (max-width: 1024px){
+    .heading-faq{
+        font-size: 3rem;  
+    }
+    .underline-faq{
+        height: 0.3rem;
+        width: 9rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .heading-faq{
+        font-size: 2.5rem;  
+    }
+    .underline-faq{
+        width: 7.8rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .heading-faq{
+        font-size: 1.5rem;  
+    }
+    .underline-faq{
+        height: 0.2rem;
+        width: 4.5rem;
+    }
+}

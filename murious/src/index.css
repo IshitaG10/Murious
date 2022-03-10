@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 body {
+  /* background-color: #11051D; */
+  background: radial-gradient(71.36% 71.36% at 50% 50%, #200C54 0%, #19084A 25%, #0B052E 58.33%, #030221 78.65%, #01000E 100%);
   font-family: "Montserrat";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
